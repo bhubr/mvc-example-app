@@ -1,0 +1,10 @@
+{% block content %}
+
+<h1>Movies</h1>
+<a href="/movie/add">Add a movie</a>
+{% for movie in movies %}
+  <h3>{{ movie.title }}</h3>
+  <img src="{{ movie.image_url }}" />
+{% endfor %}
+
+{% endblock %}
