@@ -4,6 +4,7 @@
 <a href="/movie/add">Add a movie</a>
 {% for movie in movies %}
   <h3>{{ movie.title }}</h3>
+  <a href="/movie/edit/{{ movie.id }}">Edit</a>
   <img src="{{ movie.image_url }}" />
 {% endfor %}
 
